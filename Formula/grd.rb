@@ -6,7 +6,7 @@ class Grd < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.02.11/grd_darwin_arm64.tar.gz"
-      sha256 "48d8b157c93dfac0db162f339cd7eae5da48b9ad684e0a11f61bd75ac3b7a9ec"
+      sha256 "052cb0c5c0d3a849537c1c951347813145e14da11d6305a10a1322d433184fc0"
     else
       url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.02.11/grd_darwin_x86_64.tar.gz"
       sha256 ""
