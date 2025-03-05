@@ -1,14 +1,14 @@
 class Grd < Formula
   desc "Github Release Downloader - A command line tool for downloading GitHub release files"
   homepage "https://github.com/LOVECHEN/github-release-downloader"
-  version "25.02.13"
+  version "25.03.06"
   
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.02.13/grd_darwin_arm64.tar.gz"
-      sha256 "8189e803441a9cc214521d38f7a77cc8d1b69e8951933112ad2a7851903aec74"
+      url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.03.06/grd_darwin_arm64.tar.gz"
+      sha256 "a358d0aa642d5afe73b60a1d12c237f6b6bdae8896202b05ec4422b0ffcf5236"
     else
-      url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.02.13/grd_darwin_x86_64.tar.gz"
+      url "https://github.com/LOVECHEN/github-release-downloader/releases/download/v25.03.06/grd_darwin_x86_64.tar.gz"
       sha256 ""
     end
   else
