@@ -16,7 +16,28 @@ class Wsc < Formula
   end
 
   def install
-    bin.install "wsc"
+    # 处理不同的二进制文件命名模式
+    if Hardware::CPU.arm?
+      # ARM64 版本可能的文件名
+      candidates = ["wsc", "wsc_darwin_arm64", "wsc_macos_arm64"]
+    else
+      # AMD64 版本可能的文件名
+      candidates = ["wsc", "wsc_darwin_amd64", "wsc_darwin_x86_64", "wsc_macos_amd64", "wsc_macos_x86_64"]
+    end
+
+    # 查找实际存在的文件并安装
+    installed = false
+    candidates.each do |candidate|
+      if File.exist?(candidate)
+        bin.install candidate => "wsc"
+        installed = true
+        break
+      end
+    end
+
+    unless installed
+      odie "找不到二进制文件。尝试的文件名: #{candidates.join(', ')}"
+    end
   end
 
   test do
