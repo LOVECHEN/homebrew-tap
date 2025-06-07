@@ -1,15 +1,15 @@
 class Wsc < Formula
   desc "WebSocket Client - 企业级高性能WebSocket客户端命令行工具"
   homepage "https://github.com/LOVECHEN/WebSocket-Client"
-  version "2025.06.07-c8ce044"
+  version "2025.06.07-e648414"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LOVECHEN/WebSocket-Client/releases/download/v2025.06.07-c8ce044/wsc_darwin_arm64.zip"
-      sha256 "a73e3e55418ec5740bc42cdf2097cf6efbf9d735f7654d5222e5c71822ed4b10"
+      url "https://github.com/LOVECHEN/WebSocket-Client/releases/download/v2025.06.07-e648414/wsc_darwin_arm64.zip"
+      sha256 "42eaec9acf82bcf1d2924a8e1a40e3161d5f9e6f0612aef9dbb80ced1f395e0d"
     else
-      url "https://github.com/LOVECHEN/WebSocket-Client/releases/download/v2025.06.07-c8ce044/wsc_darwin_amd64.zip"
-      sha256 "c5f5df1fbedf1f707d6b931bb4fd919b806099490c5572585aac814a2756c644"
+      url "https://github.com/LOVECHEN/WebSocket-Client/releases/download/v2025.06.07-e648414/wsc_darwin_amd64.zip"
+      sha256 "62c446d8c696dab5f9d834fd19ea74acd622737d6c26aa6845b58811e83d324f"
     end
   else
     odie "仅支持 macOS 系统"
